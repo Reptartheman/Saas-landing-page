@@ -1,6 +1,6 @@
 :root {
 
-  --font-main: "Inter-Medium", Helvetica;
+  --font-main: "Inter", sans-serif;
   --font-main-bold: "Inter-Bold", Helvetica;
   --font-h4: "Inter", sans-serif;
   --color-one: #677788;
@@ -16,10 +16,12 @@
   --size-18: 1.125rem;
   --size-20: 1.25rem;
   --size-24: 1.5rem;
+  --size-26: 1.625rem;
   --size-30: 1.875rem;
   --size-40: 2.5rem;
   --size-50: 3.125rem;
   --size-60: 3.75rem;
+  --size-70: 4.375rem;
   --size-80: 5rem;
   --size-100: 6.25rem;
   --size-120: 7.5rem;
@@ -66,7 +68,7 @@ h2 {
   margin: 0;
   color: var(--black);
   font-family: var(--font-main-bold);
-  font-size: 1.625rem;
+  font-size: var(--size-26);
   font-weight: 700;
   line-height: normal;
 }
