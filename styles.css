@@ -836,15 +836,10 @@ a.learn-more {
 
 .hire-us {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
+  align-items: center;
   height: 708px;
-  position: relative;
   background-color: #20335b;
-  border: 3px solid var(--color-one);
-  background-image: url(./assets/abstract/hire-us-transparent-pattern-bg.svg);
+  background-image: url("./assets/abstract/hire-us-transparent-pattern-bg.svg");
 }
 
 .hire-us-left {
@@ -852,9 +847,8 @@ a.learn-more {
   flex-direction: column;
   padding-left: var(--size-70);
   gap: var(--size-60);
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  align-self: stretch;
   flex: 1;
   position: relative;
 }
@@ -915,6 +909,7 @@ a.learn-more {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: flex-start;
   padding-right: var(--size-20);
 }
 
@@ -934,7 +929,7 @@ a.learn-more {
   display: flex;
   flex-direction: row;
   gap: var(--size-30);
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
@@ -983,6 +978,8 @@ a.learn-more {
 .form label {
   display: none;
 }
+
+
 
 .form h2 {
   text-align: left;
@@ -1062,4 +1059,16 @@ select {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 22px;
+}
+
+
+.privacy-policy {
+  display: grid;
+  grid-template-columns: var(--size-30) 1fr;
+}
+
+.privacy-policy > label.subtext {
+  display: block;
+  margin-left: var(--size-10);
+  width: 50%;
 }
