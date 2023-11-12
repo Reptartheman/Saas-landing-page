@@ -837,6 +837,8 @@ a.learn-more {
 .hire-us {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  padding: var(--size-10) 22rem;
   height: 708px;
   background-color: #20335b;
   background-image: url("./assets/abstract/hire-us-transparent-pattern-bg.svg");
@@ -845,25 +847,16 @@ a.learn-more {
 .hire-us-left {
   display: flex;
   flex-direction: column;
-  padding-left: var(--size-70);
-  gap: var(--size-60);
-  align-items: center;
+  gap: var(--size-40);
+  align-items: flex-start;
   justify-content: center;
+  align-self: center;
   flex: 1;
   position: relative;
 }
 
-.hire-us-top {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-30);
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
 
-.hire-us-top h1 {
+.hire-us-left h1 {
   margin: 0;
   gap: var(--size-10);
   color: var(--color-three);
@@ -872,12 +865,12 @@ a.learn-more {
   font-family: var(--font-main);
 }
 
-.hire-us-top p:nth-of-type(1) {
+.hire-us-left p:nth-of-type(1) {
   font-weight: 500;
   font-size: var(--size-16);
   line-height: var(--size-24);
 }
-.hire-us-top p:nth-of-type(2) {
+.hire-us-left p:nth-of-type(2) {
   color: var(--color-three);
   font-weight: 300;
   font-size: var(--size-16);
@@ -885,7 +878,7 @@ a.learn-more {
   font-style: italic;
 }
 
-.hire-us-top hr {
+.hire-us-left hr {
   margin: 0;
   background: #ffffff;
   flex-shrink: 0;
@@ -898,22 +891,17 @@ a.learn-more {
 .hire-us-btm {
   display: flex;
   flex-direction: column;
-  gap: var(--size-50);
+  gap: var(--size-30);
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-}
-
-.hire-us-credit {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   align-self: flex-start;
-  padding-right: var(--size-20);
 }
 
-.hire-us-credit h2 {
+
+.hire-us-btm h2 {
+  margin: 0;
   color: var(--color-three);
   text-align: left;
   font-weight: 500;
@@ -921,7 +909,8 @@ a.learn-more {
   font-family: var(--font-main);
 }
 
-.hire-us-credit p {
+.hire-us-btm p {
+  margin: 0;
   font: 500 var(--size-16) var(--font-main);
 }
 
