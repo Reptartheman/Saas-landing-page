@@ -1067,3 +1067,54 @@ select {
   margin-left: var(--size-10);
 }
 
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px 40px 30px;
+  gap: var(--size-40);
+  height: 706px;
+}
+
+.footer-top {
+  display: grid; 
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+ 'contact company features documentation resources';
+  
+ gap: var(--size-40);
+  height: 50%;
+}
+
+#item-0 {
+  border: 3px solid;
+  border-color: #95d985; 
+  grid-area: contact;
+  
+  
+}
+#item-1 {
+  border: 3px solid;
+  border-color: #5b9f57; 
+  grid-area: company;
+  
+}
+#item-2 {
+  border: 3px solid;
+  border-color: #59c59a; 
+  grid-area: features;
+  
+}
+#item-3 {
+  border: 3px solid;
+  border-color: #79d8de; 
+  grid-area: documentation;
+  
+}
+#item-4 {
+  border: 3px solid;
+  border-color: #e97f75; 
+  grid-area: resources;
+
+}
