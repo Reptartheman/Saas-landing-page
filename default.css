@@ -118,7 +118,10 @@ img {
 
 }
 
-
+.subtext {
+  color: var(--color-one);
+  font: var(--size-16) var(--font-main);
+}
 
 
 
