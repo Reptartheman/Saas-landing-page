@@ -123,7 +123,9 @@ img {
   font: var(--size-14) var(--font-main);
 }
 
-
+.logo {
+  width: var(--size-100);
+}
 
 
 /* "If the screen is at least 992 pixels wide, make the maximum width of the 'container' element 960 pixels." */

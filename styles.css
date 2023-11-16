@@ -1076,45 +1076,42 @@ select {
   height: 706px;
 }
 
-.footer-top {
-  display: grid; 
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
- 'contact company features documentation resources';
-  
- gap: var(--size-40);
-  height: 50%;
+.footer-top-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 4fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  justify-items: center;
+  align-items: center;
+  border: 3px solid green;
 }
 
-#item-0 {
-  border: 3px solid;
-  border-color: #95d985; 
-  grid-area: contact;
-  
-  
+.bottom-list > li {
+  padding-bottom: var(--size-10);
+  display: block;
+  white-space: nowrap;
 }
-#item-1 {
-  border: 3px solid;
-  border-color: #5b9f57; 
-  grid-area: company;
-  
-}
-#item-2 {
-  border: 3px solid;
-  border-color: #59c59a; 
-  grid-area: features;
-  
-}
-#item-3 {
-  border: 3px solid;
-  border-color: #79d8de; 
-  grid-area: documentation;
-  
-}
-#item-4 {
-  border: 3px solid;
-  border-color: #e97f75; 
-  grid-area: resources;
 
+
+.bottom-list > li i {
+  width: var(--size-20);
+  color: var(--color-one);
+  display: inline-block;
+  font-size: var(--size-14);
+}
+
+.bottom-list > li a.address-phone {
+  font: var(--size-14) var(--font-main);
+  color: var(--color-one);
+}
+
+.footer-menu-list-grid {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+}
+
+.footer-btm {
+  border-top: 3px solid var(--color-one);
 }
