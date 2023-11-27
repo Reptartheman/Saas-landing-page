@@ -97,6 +97,17 @@ img {
   border-style: none;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
