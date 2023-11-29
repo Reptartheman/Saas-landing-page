@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .hero-section {
+    justify-content: center;
+  }
+
+  .left-side-header {
+    text-align: center;
+  }
+
+  .play-container {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+}
