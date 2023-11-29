@@ -350,7 +350,7 @@ a.learn-more {
   border-radius: 1.5625rem;
   padding: var(--size-10);
   flex-direction: column;
-  gap: var(--size-10);
+
   justify-content: center;
   flex-shrink: 0;
   width: var(--size-50);
@@ -493,7 +493,6 @@ a.learn-more {
 
 .brands-title {
   flex-direction: column;
-  gap: var(--size-10);
   justify-content: flex-start;
 }
 
@@ -532,7 +531,6 @@ a.learn-more {
 
 .pricing-title {
   flex-direction: column;
-  gap: var(--size-10);
   justify-content: flex-start;
 }
 
@@ -591,7 +589,6 @@ a.learn-more {
 
 .plan-footer {
   flex-direction: column;
-  gap: var(--size-10);
 }
 
 .plan-footer p {
@@ -607,7 +604,6 @@ a.learn-more {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   height: 100%;
-  gap: var(--size-10);
 }
 
 .price-grid-item {
@@ -636,7 +632,6 @@ a.learn-more {
 
 #sketch {
   width: fit-content;
-  gap: var(--size-10);
   padding: 0.25rem var(--size-14);
   position: relative;
   background-color: #01c9a7;
@@ -678,7 +673,6 @@ a.learn-more {
 
 .hire-us-left h1 {
   margin: 0;
-  gap: var(--size-10);
   color: var(--color-three);
   font: 700 var(--size-30) var(--font-main);
 
@@ -746,7 +740,6 @@ a.learn-more {
   grid-area: rightSide;
   padding: var(--size-30);
   flex-direction: column;
-  gap: var(--size-10);
 }
 
 .form {
