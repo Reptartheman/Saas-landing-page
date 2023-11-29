@@ -22,16 +22,13 @@
   width: 100%;
   height: 5.375rem;
   padding: var(--size-10) var(--size-30);
-  position: relative;
 }
 
 .logo-container {
   flex-direction: column;
-  position: relative;
 }
 
 .logo-container img {
-  position: relative;
   width: 9.688rem;
   height: 2.881rem;
 }
@@ -39,12 +36,10 @@
 .navbar {
   gap: var(--size-30);
   padding: var(--size-6) var(--size-16);
-  position: relative;
 }
 
 .navbar-nav {
   gap: var(--size-20);
-  position: relative;
   flex: 0 0 auto;
 }
 
@@ -69,17 +64,14 @@
   width: 50%;
   gap: var(--size-30);
   padding: 0px 0px var(--size-60);
-  position: relative;
 }
 
 .left-side-header {
   flex-direction: column;
   width: 20.875rem;
-  position: relative;
 }
 
 .left-side-header h1 {
-  position: relative;
   align-self: stretch;
   margin: 0;
   font-family: var(--font-main);
@@ -90,7 +82,6 @@
 }
 
 .left-side-header p {
-  position: relative;
   font-family: var(--font-main);
   font-weight: 500;
   color: var(--color-one);
@@ -99,7 +90,6 @@
 
 .actions {
   gap: var(--size-24);
-  position: relative;
   width: 100%;
   flex: 0 0 auto;
 }
@@ -117,7 +107,6 @@
 }
 
 a.learn-more {
-  position: relative;
   font-family: var(--font-main-bold);
   font-weight: 700;
   color: var(--color-two);
@@ -127,7 +116,6 @@ a.learn-more {
 }
 
 .right-side {
-  position: relative;
   width: 30rem;
   height: 25rem;
 }
@@ -191,12 +179,10 @@ a.learn-more {
   flex-direction: column;
   gap: var(--size-60);
   padding: var(--size-120) 0rem var(--size-80);
-  position: relative;
 }
 
 .benefits-title {
   flex-direction: column;
-  position: relative;
 }
 
 .benefits-list {
@@ -205,14 +191,12 @@ a.learn-more {
   flex-wrap: wrap;
   gap: var(--size-30);
   padding: var(--size-10) var(--size-30);
-  position: relative;
 }
 
 .benefits-item {
   flex-direction: column;
   gap: var(--size-20);
   padding: var(--size-20);
-  position: relative;
   background-color: var(--color-three);
   border: 1px solid;
   border-color: var(--color-three);
@@ -220,14 +204,12 @@ a.learn-more {
 }
 
 .benefits-item img {
-  position: relative;
   width: var(--size-50);
   height: var(--size-50);
 }
 
 .benefits-item h3 {
   height: var(--size-24);
-  position: relative;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -247,7 +229,6 @@ a.learn-more {
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
 
 .banner-section-content {
@@ -256,7 +237,6 @@ a.learn-more {
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
 
 .banner-left {
@@ -267,7 +247,6 @@ a.learn-more {
   align-self: stretch;
   flex-shrink: 0;
   width: 28rem;
-  position: relative;
 }
 
 .banner-left h2 {
@@ -282,14 +261,12 @@ a.learn-more {
   justify-content: flex-end;
   flex: 1;
   height: 29.375rem;
-  position: relative;
 }
 
 .banner-right img {
   align-self: stretch;
   flex-shrink: 0;
   height: 22.0625rem;
-  position: relative;
 }
 
 /* ----------------------------  BANNER section END ----------------------------  */
@@ -393,7 +370,6 @@ a.learn-more {
   justify-content: center;
   width: 4.375rem;
   height: 4.375rem;
-  position: relative;
   left: 50%;
   bottom: 50%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -450,11 +426,9 @@ a.learn-more {
   align-self: stretch;
   flex-shrink: 0;
   gap: var(--size-30);
-  position: relative;
 }
 
 .description img {
-  position: relative;
   width: var(--size-100);
   height: 2.125rem;
 }
@@ -513,7 +487,6 @@ a.learn-more {
 }
 
 .brands-list ul li img {
-  position: relative;
   flex: 1;
   flex-grow: 1;
   height: var(--size-40);
@@ -581,7 +554,6 @@ a.learn-more {
 }
 
 .plan-header hr {
-  position: relative;
   width: 18.125rem;
   height: 1px;
   background-color: #8d8d8d;
@@ -633,7 +605,6 @@ a.learn-more {
 #sketch {
   width: fit-content;
   padding: 0.25rem var(--size-14);
-  position: relative;
   background-color: #01c9a7;
   border-radius: var(--size-14);
   font-family: "Inter-Bold", Helvetica;
@@ -668,7 +639,6 @@ a.learn-more {
   gap: var(--size-40);
   justify-content: center;
   align-self: center;
-  position: relative;
 }
 
 .hire-us-left h1 {
