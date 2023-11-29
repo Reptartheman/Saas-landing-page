@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 :root {
-
   --font-main: "Inter", sans-serif;
   --font-main-bold: "Inter-Bold", Helvetica;
   --font-h4: "Inter", sans-serif;
@@ -11,6 +9,7 @@
   --color-three: #ffffff;
   --black: #000000;
 
+  --input-border: 1px solid #e6e8f2;
 
   --size-6: 0.375rem;
   --size-10: 0.625rem;
@@ -30,8 +29,6 @@
   --size-120: 7.5rem;
   --size-150: 9.375rem;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -78,8 +75,11 @@ h2 {
 
 h3 {
   margin: 0;
+  font-family: var(--font-main-bold);
+  font-weight: 700;
+  font-size: var(--size-16);
+  color: var(--black);
 }
-
 
 h4 {
   margin: 0;
@@ -95,6 +95,20 @@ img {
   max-width: 100%;
   vertical-align: middle;
   border-style: none;
+}
+
+.gap-10 {
+  gap: var(--size-10);
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
 }
 
 .container {
@@ -119,7 +133,16 @@ img {
   font-family: var(--font-main-bold);
   font-weight: 700;
   font-size: var(--size-14);
+}
 
+.bubble-logo {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  object-fit: cover;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 13px #00000040;
 }
 
 .subtext {
@@ -130,7 +153,6 @@ img {
 .logo {
   width: var(--size-100);
 }
-
 
 /* "If the screen is at least 992 pixels wide, make the maximum width of the 'container' element 960 pixels." */
 @media (min-width: 992px) {
