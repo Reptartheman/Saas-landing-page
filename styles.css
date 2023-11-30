@@ -1,6 +1,7 @@
 /* ----------------------------  nav section START ----------------------------  */
 
-/* .top-section::before {
+.top-section::before {
+  grid-column: 2 / span 1;
   content: "";
   background-image: linear-gradient(
     to left,
@@ -16,8 +17,9 @@
   bottom: 0;
   right: 0;
 }
- */
+
 .page-header {
+  grid-column: 2 / span 1;
   justify-content: space-between;
   width: 100%;
   height: 5.375rem;
@@ -53,6 +55,7 @@
 
 /* ----------------------------  hero section START ----------------------------  */
 .hero-section {
+  grid-column: 2 / span 1;
   flex-direction: row;
   flex-wrap: wrap;
   padding: var(--size-40) var(--size-30) 0;
@@ -183,11 +186,12 @@ a.learn-more {
 }
 
 .benefits-title {
+  grid-column: 2 / span 1;
   flex-direction: column;
 }
 
 .benefits-list {
-  width: 100%;
+  grid-column: 2 / span 1;
   justify-content: center;
   flex-wrap: wrap;
   gap: var(--size-30);
@@ -233,6 +237,7 @@ a.learn-more {
 }
 
 .banner-section-content {
+  grid-column: 2/ span 1;
   background-color: #f8fafe;
   flex-direction: row;
   justify-content: flex-start;
@@ -621,9 +626,7 @@ a.learn-more {
 
 .hire-us {
   display: grid;
-  grid-template-columns:
-    minmax(var(--size-30), 1fr) minmax(66.25rem, 1fr)
-   minmax(var(--size-30), 1fr);
+  grid-template-columns: minmax(20%, 1fr) minmax(60%, 1fr) minmax(20%, 1fr);
 
   grid-auto-flow: row;
   align-items: center;
@@ -807,14 +810,7 @@ select {
 /* ------------------------------ FOOTER STYLES START ------------------------- */
 
 .footer {
-  display: grid;
-  grid-template-columns: minmax(var(--size-60), 1fr) minmax(66.25rem, 1fr) minmax(
-      var(--size-60),
-      1fr
-    );
-  grid-auto-flow: row;
-  align-items: center;
-  margin-top: var(--size-60);
+
 }
 
 .footer-top-container {
