@@ -111,13 +111,13 @@ img {
   align-items: flex-start;
 }
 
-.container {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+.section-container {
+  display: grid;
+  grid-template-columns: minmax(15%, 1fr) minmax(70%, 1fr) minmax(15%, 1fr);
+  grid-auto-flow: row;
+  align-items: center;
 }
+
 
 .btn {
   display: inline-block;
@@ -155,22 +155,21 @@ img {
 }
 
 /* "If the screen is at least 992 pixels wide, make the maximum width of the 'container' element 960 pixels." */
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-} */
+}
 /* "If the screen is at least 1200px, make the maximum width of the 'container' element 1140 pixels." */
- @media (min-width: 1200px) {
-/*   .container {
+@media (min-width: 1200px) {
+  .container {
     max-width: 1140px;
-  } */
+  }
 
-
+  /* 
 .hire-us, .footer {
   grid-template-columns:
   minmax(var(--size-30), 1fr) minmax(66.25rem, 1fr)
  minmax(var(--size-30), 1fr);
+} */
 }
-
-} 
