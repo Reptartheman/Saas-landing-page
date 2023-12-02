@@ -1,6 +1,6 @@
 /* ----------------------------  nav section START ----------------------------  */
 
-.top-section::before {
+/* .top-section::before {
   grid-column: 2 / span 1;
   content: "";
   background-image: linear-gradient(
@@ -16,7 +16,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-}
+} */
 
 .page-header {
   grid-column: 2 / span 1;
@@ -140,38 +140,38 @@ a.learn-more {
 }
 
 .google {
-  top: 0.625rem; /* 10px / 16px = 0.625rem */
-  left: 4rem;    /* 64px / 16px = 4rem */
+  top: 0.625rem; 
+  left: 4rem;
 }
 
 .google-ads {
-  top: 18.125rem; /* 290px / 16px = 18.125rem */
-  left: 9.6875rem; /* 155px / 16px = 9.6875rem */
+  top: 18.125rem; 
+  left: 9.6875rem; 
 }
 
 .attlasian {
-  top: 0.625rem; /* 10px / 16px = 0.625rem */
-  left: 10.9375rem; /* 175px / 16px = 10.9375rem */
+  top: 0.625rem; 
+  left: 10.9375rem;
 }
 
 .paypal {
-  top: 10.75rem; /* 172px / 16px = 10.75rem */
-  left: 2.75rem; /* 44px / 16px = 2.75rem */
+  top: 10.75rem;
+  left: 2.75rem;
 }
 
 .weave {
-  top: 10.75rem; /* 172px / 16px = 10.75rem */
-  left: 16.375rem; /* 262px / 16px = 16.375rem */
+  top: 10.75rem;
+  left: 16.375rem;
 }
 
 .calendar {
-  top: 19.375rem; /* 310px / 16px = 19.375rem */
-  left: 22.75rem; /* 364px / 16px = 22.75rem */
+  top: 19.375rem;
+  left: 22.75rem;
 }
 
 .asana {
-  top: 0.625rem; /* 10px / 16px = 0.625rem */
-  left: 23.75rem; /* 380px / 16px = 23.75rem */
+  top: 0.625rem; 
+  left: 23.75rem;
 }
 
 /* ----------------------------  HERO section END ----------------------------  */
@@ -462,6 +462,7 @@ a.learn-more {
   grid-column: 2/ span 1;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: var(--size-30);
 }
 
 .brands-title h3 {
@@ -644,11 +645,18 @@ a.learn-more {
   padding: var(--size-50);
 }
 
+.hire-us-left-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 .hire-us-left {
+  display: flex;
   flex-direction: column;
   gap: var(--size-40);
-  justify-content: center;
-  align-self: center;
+/*   justify-content: center;
+  align-self: center; */
 }
 
 .hire-us-left h1 {
