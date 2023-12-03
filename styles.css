@@ -1,6 +1,6 @@
 /* ----------------------------  nav section START ----------------------------  */
 
-/* .top-section::before {
+/*  .top-section::before {
   grid-column: 2 / span 1;
   content: "";
   background-image: linear-gradient(
@@ -16,7 +16,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-} */
+}  */
 
 .page-header {
   grid-column: 2 / span 1;
@@ -118,6 +118,8 @@ a.learn-more {
 }
 
 .right-side {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 30rem;
   height: 25rem;
@@ -190,10 +192,11 @@ a.learn-more {
 
 .benefits-list {
   grid-column: 2 / span 1;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--size-30);
-  padding: var(--size-10) var(--size-30);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--size-20);
+  margin: var(--size-60) 0 var(--size-60) 0;
+  grid-template-areas: "responsive custom premium docs";
 }
 
 .benefits-item {
@@ -220,6 +223,24 @@ a.learn-more {
 .benefits-item p {
   margin: 0;
 }
+
+.responsive {
+  grid-area: responsive;
+}
+
+.custom {
+  grid-area: custom;
+}
+
+.premium {
+  grid-area: premium;
+}
+
+.docs {
+  grid-area: docs;
+}
+
+
 
 /* ----------------------------  BENEFITS section END ----------------------------  */
 
@@ -254,7 +275,6 @@ a.learn-more {
 .banner-right {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
   justify-content: flex-end;
   height: 29.375rem;
 }
@@ -270,10 +290,15 @@ a.learn-more {
 /* ----------------------------  WHY FRONT section START ----------------------------  */
 
 .why-front-section {
+  margin-top: var(--size-50);
   padding-bottom: var(--size-80);
 }
-.why-front-title {
+
+.why-front-content {
   grid-column: 2/ span 1;
+}
+
+.why-front-title {
   flex-direction: column;
 }
 
@@ -282,49 +307,70 @@ a.learn-more {
 }
 
 .circles-list {
-  grid-column: 2/ span 1;
-  padding: 0rem 2.125rem 0rem 2.125rem;
+  display: grid;
+  grid-template-areas: "circle-one circle-two circle-three circle-four";
+
 }
 
 .circle-container {
+  display: flex;
   padding: 1.625rem 0rem;
   flex-direction: column;
   gap: var(--size-24);
-  flex: 1;
 }
 
 .circle-top {
   flex-direction: row;
   gap: 0.25rem;
-  justify-content: flex-start;
+  justify-content: center;
   align-self: stretch;
-  flex-shrink: 0;
 }
 
-.basic {
-  flex: 1;
-  height: 0.0625rem;
-  display: hidden;
+.circle-one {
+  grid-area: circle-one;
+}
+.circle-two {
+  grid-area: circle-two;
+}
+.circle-three {
+  grid-area: circle-three;
+}
+.circle-four {
+  grid-area: circle-four;
 }
 
-.left-wing {
+
+/* .left-wing {
   background: #e6e9f2;
   flex: 1;
   height: 0.0625rem;
   overflow: hidden;
 }
 
+.right-wing {
+  background: #e6e9f2;
+  flex: 1;
+  height: 0.0625rem;
+  overflow: hidden;
+} */
+
 .bullet-circle {
   background: #ecf2ff;
   border-radius: 1.5625rem;
   padding: var(--size-10);
   flex-direction: column;
-
   justify-content: center;
-  flex-shrink: 0;
   width: var(--size-50);
   height: var(--size-50);
 }
+
+.circle-top::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #E6E9F2;
+}
+
 .bullet-circle-inner {
   background: #0066ff;
   border-radius: 0.1875rem;
@@ -333,26 +379,20 @@ a.learn-more {
   height: var(--size-6);
   overflow: hidden;
 }
-.right-wing {
-  background: #e6e9f2;
-  flex: 1;
-  height: 0.0625rem;
-  overflow: hidden;
-}
+
 
 /* ----------------------------  WHY FRONT section END ----------------------------  */
 
 /* ----------------------- BANNER section START ----------------------------  */
 
 .banner-video-section {
-  padding-bottom: var(--size-80);
+  display: flex;
+  justify-content: center;
 }
 
 .banner-container {
-  grid-column: 2/ span 1;
   width: 60.25rem;
   height: 25.875rem;
-  justify-self: center;
 }
 
 .play-btn-container {
@@ -363,8 +403,8 @@ a.learn-more {
   justify-content: center;
   width: 4.375rem;
   height: 4.375rem;
-  left: 50%;
-  bottom: 50%;
+  left: 48%;
+  bottom: 54%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 /* ----------------------- BANNER section END ----------------------------  */
@@ -518,11 +558,12 @@ a.learn-more {
 }
 
 .price-card {
+  display: flex;
   border: 1px solid #ffffff;
   padding: var(--size-40);
   flex-direction: column;
   gap: var(--size-50);
-  justify-content: center;
+  justify-content: flex-start;
   align-self: stretch;
   width: 23rem;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
@@ -559,6 +600,7 @@ a.learn-more {
 }
 
 .plan-footer {
+  display: flex;
   flex-direction: column;
 }
 
@@ -860,8 +902,25 @@ select {
 
 .footer-menu-list-grid {
   display: grid;
+  grid-template-areas: "company features footer-docs resources";
   width: 100%;
   grid-auto-flow: column;
+}
+
+.company {
+  grid-area: company;
+}
+
+.features {
+  grid-area: features;
+}
+
+.footer-docs {
+  grid-area: footer-docs;
+}
+
+.resources {
+  grid-area: resources;
 }
 
 .footer-menu-list li {

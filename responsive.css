@@ -2,10 +2,118 @@
   .hire-us-right {
     padding: 0;
   }
-} 
+
+  .benefits-list {
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "responsive custom" 
+    "premium docs";
+  }
+
+}
+
+@media (max-width: 1046px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 @media (max-width: 1023px) {
+
+  .left-side {
+    width: fit-content;
+  }
+
+  .right-side {
+    width: 44.5rem;
+    height: 19.313rem;
+  }
+
+  .google {
+    top: 0rem; 
+    left: 6.875rem;
+  }
+  
+  .google-ads {
+    top: 13.063rem; 
+    left: 14.375rem; 
+  }
+  
+  .attlasian {
+    top: 0rem; 
+    left: 18rem;
+  }
+  
+  .paypal {
+    top: 6.188rem;
+    left: 7rem;
+  }
+  
+  .weave {
+    top: 6.188rem;
+    left: 26rem;
+  }
+  
+  .calendar {
+    top: 14.313rem;
+    left: 32.313rem;
+  }
+  
+  .asana {
+    top: 0rem; 
+    left: 33.313rem;
+  }
+
+  .left-side-header {
+    text-align: center;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+
+  .benefits-list {
+    justify-content: space-between;
+  }
+
+  .banner-section {
+    margin-top: var(--size-50);
+  }
+
+  .banner-section-content {
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    gap: var(--size-50);
+  }
+
+  .banner-section-content, .banner-left {
+    align-items: center;
+  }
+
+  .banner-left {
+    padding: var(--size-50) var(--size-30) 0;
+  }
+
+  .banner-left h2 {
+    text-align: center;
+  }
+
+  .banner-right {
+    align-items: flex-end;
+  }
+
+  .banner-right img {
+    width: 100%;
+    height: unset;
+  }
+
+
   .hire-us-content {
     grid-auto-flow: row;
     gap: var(--size-100);
@@ -19,5 +127,34 @@
     width: 100%;
     padding: 0;
   }
+
+  .plan-info {
+    flex-wrap: wrap;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  .plan-header hr {
+    width: 90%;
+  }
+
+  .plan-header,
+  .plan-footer {
+    align-items: center;
+  }
+
+  .price-grid-item {
+    width: 100%;
+  }
+
+  .footer-menu-list-grid {
+
+    grid-template-areas: "company features" 
+    "footer-docs resources";
+  }
+
+
 
 }
