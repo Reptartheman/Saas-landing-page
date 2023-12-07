@@ -316,6 +316,7 @@ a.learn-more {
 }
 
 .circle-container h4 {
+  margin-top: var(--size-14);
   align-self: center;
   display: inline;
 }
@@ -398,13 +399,26 @@ a.learn-more {
 /* ----------------------- BANNER section START ----------------------------  */
 
 .banner-video-section {
-  display: flex;
+  display: grid;
+  grid-template-areas: "play-img play-img play-img";
+  position: relative;
   justify-content: center;
 }
 
-.banner-container {
-  width: 60.25rem;
-  height: 25.875rem;
+.play-img {
+  grid-area: play-img;
+}
+
+
+.play-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play-btn-container {
@@ -415,8 +429,6 @@ a.learn-more {
   justify-content: center;
   width: 4.375rem;
   height: 4.375rem;
-  left: 48%;
-  bottom: 54%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 /* ----------------------- BANNER section END ----------------------------  */
