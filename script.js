@@ -23,7 +23,7 @@ function removeAlignCenter() {
 function toggleNav({ target }) {
   const expanded = target.getAttribute('aria-expanded') === 'true' || false;
   navButton.setAttribute('aria-expanded', !expanded);
-  if (!expanded) {
+  if (expanded) {
     hamburgerMenu.innerHTML = `&#9776;`;
   } else {
     hamburgerMenu.innerHTML = `&#88;`; 
