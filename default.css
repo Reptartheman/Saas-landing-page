@@ -154,6 +154,10 @@ img {
   width: var(--size-100);
 }
 
+.test-border {
+  border: 2px solid red;
+}
+
 /* "If the screen is at least 992 pixels wide, make the maximum width of the 'container' element 960 pixels." */
 @media (min-width: 992px) {
   .container {

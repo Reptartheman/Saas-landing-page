@@ -17,20 +17,30 @@
   </head>
   <body>
     <div class="top-section section-container">
-      <header class="page-header flex-align-center">
-        <div class="logo-container flex-align-start gap-10">
+      <header class="page-header" id="topNav">
+        <div class="logo-container">
           <img src="./assets/project_logo/logo.svg" alt="Front logo" />
         </div>
 
-        <nav class="navbar nav flex-align-center">
-          <ul class="navbar-nav flex-align-center">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">Features</a></li>
-            <li class="nav-link"><a href="#">Learn</a></li>
-            <li class="nav-link"><a href="#">Pricing</a></li>
-            <li class="nav-link"><a href="#">Hire Us</a></li>
-          </ul>
-          <a class="btn btn-primary" href="#">Buy Now</a>
+        <nav class="navbar nav">
+          <button
+            class="navbar-toggler"
+            aria-expanded="false"
+            aria-controls="navbarDropdown"
+          >
+            <span class="hamburger"></span>
+          </button>
+          <div class="nav-container">
+            <ul class="navbar-nav" id="navbarList">
+              <li class="nav-link"><a href="#">Home</a></li>
+              <li class="nav-link"><a href="#">Features</a></li>
+              <li class="nav-link"><a href="#">Learn</a></li>
+              <li class="nav-link"><a href="#">Pricing</a></li>
+              <li class="nav-link"><a href="#">Hire Us</a></li>
+            </ul>
+
+            <a class="btn btn-primary" href="#">Buy Now</a>
+          </div>
         </nav>
       </header>
 
@@ -84,56 +94,56 @@
       </div>
 
       <div class="benefits-list flex-align-start">
-        <div class="benefits-item flex-align-start">
+        <div class="responsive benefits-item flex-align-start">
           <img src="./assets/icons/responsive.svg" alt="responsive" />
           <h3 class="flex-align-center">Responsive</h3>
           <p>
-            It is a long established <br />
-            fact that a reader will be <br />
-            distracted by the readable <br />
-            content of a page when <br />
+            It is a long established
+            fact that a reader will be
+            distracted by the readable
+            content of a page when
             looking at its layout.
           </p>
           <a class="learn-more">Learn more</a>
         </div>
 
-        <div class="benefits-item flex-align-start">
+        <div class="custom benefits-item flex-align-start">
           <img src="./assets/icons/customizable.svg" alt="responsive" />
           <h3 class="flex-align-center gap-10">Customizable</h3>
           <p>
-            It is a long established <br />
-            fact that a reader will be <br />
-            distracted by the readable <br />
-            content of a page when <br />
+            It is a long established
+            fact that a reader will be
+            distracted by the readable
+            content of a page when
             looking at its layout.
           </p>
           <a class="learn-more">Learn more</a>
         </div>
 
-        <div class="benefits-item flex-align-start">
+        <div class="premium benefits-item flex-align-start">
           <img src="./assets/icons/premium.svg" alt="responsive" />
           <h3 class="flex-align-center">
             Premium <span id="sketch">sketch</span>
           </h3>
 
           <p>
-            It is a long established <br />
-            fact that a reader will be <br />
-            distracted by the readable <br />
-            content of a page when <br />
+            It is a long established
+            fact that a reader will be
+            distracted by the readable
+            content of a page when
             looking at its layout.
           </p>
           <a class="learn-more">Learn more</a>
         </div>
 
-        <div class="benefits-item flex-align-start">
+        <div class="docs benefits-item flex-align-start">
           <img src="./assets/icons/documentation.svg" alt="responsive" />
           <h3 class="flex-align-center">Documentation</h3>
           <p>
-            It is a long established <br />
-            fact that a reader will be <br />
-            distracted by the readable <br />
-            content of a page when <br />
+            It is a long established
+            fact that a reader will be
+            distracted by the readable
+            content of a page when
             looking at its layout.
           </p>
           <a class="learn-more">Learn more</a>
@@ -156,64 +166,57 @@
     </section>
 
     <section class="why-front-section section-container">
-      <div class="why-front-title flex-align-center gap-10">
-        <h2>Why Front?</h2>
-        <p>
-          Front is an incredibly beautiful, fully responsive, and mobile-first
-          projects on <br />
-          the web - it is the starting point for creative sites
-        </p>
-      </div>
+      <div class="why-front-content">
+        <div class="why-front-title flex-align-center gap-10">
+          <h2>Why Front?</h2>
+          <p>
+            Front is an incredibly beautiful, fully responsive, and mobile-first
+            projects on
+            the web - it is the starting point for creative sites
+          </p>
+        </div>
 
-      <div class="circles-list flex-align-center">
-        <div class="circle-container flex-align-center">
-          <div class="circle-top flex-align-center">
-            <div class="basic"></div>
-            <div class="bullet-circle flex-align-center gap-10">
-              <div class="bullet-circle-inner"></div>
+        <div class="circles-list">
+          <div class="circle-container circle-one">
+            <div class="circle-top">
+              <div class="bullet-circle gap-10">
+                <div class="bullet-circle-inner"></div>
+              </div>
             </div>
-            <div class="right-wing"></div>
+            <h4>Basic Elements</h4>
           </div>
-          <h4>Basic Elements</h4>
-        </div>
-        <div class="circle-container flex-align-center">
-          <div class="circle-top flex-align-center">
-            <div class="left-wing"></div>
-            <div class="bullet-circle flex-align-center">
-              <div class="bullet-circle-inner"></div>
+          <div class="circle-container circle-two">
+            <div class="circle-top flex-align-center">
+              <div class="bullet-circle flex-align-center">
+                <div class="bullet-circle-inner"></div>
+              </div>
             </div>
-            <div class="right-wing"></div>
+            <h4>Components</h4>
           </div>
-          <h4>Components</h4>
-        </div>
-        <div class="circle-container flex-align-center">
-          <div class="circle-top flex-align-center">
-            <div class="left-wing"></div>
-            <div class="bullet-circle flex-align-center">
-              <div class="bullet-circle-inner"></div>
+          <div class="circle-container circle-three">
+            <div class="circle-top flex-align-center">
+              <div class="bullet-circle flex-align-center">
+                <div class="bullet-circle-inner"></div>
+              </div>
             </div>
-            <div class="right-wing"></div>
+            <h4>Combined Components</h4>
           </div>
-          <h4>Combined Components</h4>
-        </div>
-        <div class="circle-container flex-align-center">
-          <div class="circle-top flex-align-center">
-            <div class="left-wing"></div>
-            <div class="bullet-circle flex-align-center">
-              <div class="bullet-circle-inner"></div>
+          <div class="circle-container circle-four">
+            <div class="circle-top flex-align-center">
+              <div class="bullet-circle flex-align-center">
+                <div class="bullet-circle-inner"></div>
+              </div>
             </div>
-            <div class="basic"></div>
+            <h4>Page Layouts</h4>
           </div>
-          <h4>Page Layouts</h4>
         </div>
-      </div>
-    </section>
-
-    <section class="banner-video-section section-container">
-      <div class="banner-container">
-        <img src="./assets/banners/banner_two.jpg" alt="" />
-        <div class="play-btn-container flex-align-center">
-          <i class="fa-solid fa-play"></i>
+        <div class="banner-video-section">
+          <img class="play-img" src="./assets/banners/banner_two.jpg" alt="" />
+          <div class="why-front-play-container">
+            <div class="play-btn-container flex-align-center">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -231,17 +234,16 @@
           </div>
         </div>
 
-        <div class="hubspot-right flex-align-start">
-          <div class="description flex-align-start">
+        <div class="hubspot-right">
+          <div class="description">
             <img src="./assets/company_logos/hubspot.svg" alt="hubspot" />
             <p class="hubspot-text">
-              The template is really nice and offers quite a <br />
-              large set of options. It's beautiful and the <br />
-              coding is done quickly and seamlessly. Thank <br />
-              you!
+              The template is really nice and offers quite a large set of
+              options. It's beautiful and the coding is done quickly and
+              seamlessly. Thank you!
             </p>
           </div>
-          <div class="person-name flex-align-start">
+          <div class="person-name">
             <h3>Christina Kray</h3>
             <p>Executive Director</p>
           </div>
@@ -256,11 +258,19 @@
 
       <div class="brands-list">
         <ul>
-          <li><img src="./assets/company_logos/weebly.svg" alt="weebly" /></li>
-          <li><img src="./assets/company_logos/uber.svg" alt="uber" /></li>
-          <li><img src="./assets/company_logos/slack.svg" alt="slack" /></li>
-          <li><img src="./assets/company_logos/airbnb.svg" alt="airbnb" /></li>
-          <li>
+          <li class="weebly">
+            <img src="./assets/company_logos/weebly.svg" alt="weebly" />
+          </li>
+          <li class="uber">
+            <img src="./assets/company_logos/uber.svg" alt="uber" />
+          </li>
+          <li class="slack">
+            <img src="./assets/company_logos/slack.svg" alt="slack" />
+          </li>
+          <li class="airbnb">
+            <img src="./assets/company_logos/airbnb.svg" alt="airbnb" />
+          </li>
+          <li class="spotify">
             <img src="./assets/company_logos/spotify.svg" alt="spotify" />
           </li>
         </ul>
@@ -275,7 +285,7 @@
         </div>
 
         <div class="plan-info flex-align-center">
-          <div class="price-card flex-align-start">
+          <div class="price-card">
             <div class="plan-header flex-align-start">
               <h1>59 <span>/ mo</span></h1>
               <hr />
@@ -284,7 +294,7 @@
                 questions asked.
               </p>
             </div>
-            <div class="plan-footer flex-align-center gap-10">
+            <div class="plan-footer flex-align-start gap-10">
               <a href="#" class="btn btn-primary">
                 <i class="fa-regular fa-circle-play"></i>
                 Play Video
@@ -340,18 +350,19 @@
 
     <section class="hire-us hire-us-background section-container">
       <div class="hire-us-content">
-        <div class="hire-us-left flex-align-start">
-          <h1 class="gap-10">Hire Us</h1>
-          <p>
-            Whatever your goal - <br />
-            we will get you there
-          </p>
-          <hr />
-          <p>
-            "I love Front! I love the ease of use, I love the <br />
-            fact that I have total creative freedom..."
-          </p>
-
+        <div class="hire-us-left-container">
+          <div class="hire-us-left">
+            <h1 class="gap-10">Hire Us</h1>
+            <p>
+              Whatever your goal - 
+              we will get you there
+            </p>
+            <hr />
+            <p>
+              "I love Front! I love the ease of use, I love the
+              fact that I have total creative freedom..."
+            </p>
+          </div>
           <div class="hire-us-btm flex-align-start">
             <h2>Charlotte Moore</h2>
             <p>Head of Commercials, Slack</p>
@@ -512,7 +523,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-menu-item features">
+          <div class="features footer-menu-item features">
             <h3>Features</h3>
             <ul class="footer-menu-list">
               <li>
@@ -529,7 +540,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-menu-item docs">
+          <div class="footer-docs footer-menu-item docs">
             <h3>Documentation</h3>
             <ul class="footer-menu-list">
               <li>
@@ -549,7 +560,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-menu-item resources">
+          <div class="resources footer-menu-item resources">
             <h3>Resources</h3>
             <ul class="footer-menu-list">
               <li>
@@ -612,5 +623,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
