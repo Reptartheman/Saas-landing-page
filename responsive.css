@@ -489,7 +489,7 @@ ul.footer-menu-list {
 @media only screen and (min-width: 285px) and (max-width: 560px) {
 
   .navbar-nav {
-    flex-direction: column;
+    flex-direction: columnf;
   }
 
 
