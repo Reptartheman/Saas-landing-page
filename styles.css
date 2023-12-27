@@ -206,7 +206,7 @@ a.learn-more {
 
 .benefits {
   flex-direction: column;
-  padding: var(--size-120) 0rem var(--size-80);
+  padding: var(--size-120) 0rem var(--size-40);
 }
 
 .benefits-title {
@@ -696,6 +696,7 @@ a.learn-more {
   color: var(--color-three);
   font-size: var(--size-14);
   line-height: normal;
+  margin-left: var(--size-6);
 }
 
 .hire-us-background {

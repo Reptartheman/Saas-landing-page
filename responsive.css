@@ -23,6 +23,10 @@
 
 @media (max-width: 1023px) {
 
+  .section-container {
+    grid-template-columns: minmax(10%, 1fr) minmax(80%, 1fr) minmax(10%, 1fr);
+  }
+
   .page-header {
     justify-content: space-between;
   }
@@ -136,10 +140,12 @@
 
   .benefits-list {
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .banner-section {
     margin-top: var(--size-50);
+    padding-bottom: var(--size-20);
   }
 
   .banner-section-content {
@@ -147,7 +153,6 @@
     justify-content: center;
     flex-direction: column;
     background-color: transparent;
-    gap: var(--size-50);
   }
 
   .banner-section-content, .banner-left {
@@ -164,7 +169,7 @@
   }
 
   .banner-right {
-    align-items: flex-end;
+    justify-content: flex-start;
   }
 
   .banner-right img {
@@ -234,7 +239,9 @@
    align-items: center;
   }
 
-
+#sketch {
+  margin-left: var(--size-10);
+}
 
 }
 
@@ -282,6 +289,10 @@
     left: 15.5rem;
   }
 
+  .benefits {
+    padding-bottom: 0;
+  }
+
   .benefits-list {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
@@ -295,6 +306,10 @@
   .circle-top::before, .circle-top::after {
     display: none;
   } 
+
+.benefits-title p {
+  text-align: center;
+}
 
   .benefits-item p {
     width: 100%;
@@ -504,9 +519,16 @@ ul.footer-menu-list {
 
   .hubspot-left {
     width: 14.5rem;
-    justify-self: normal;
     position: relative;
     right: var(--size-50);
+  }
+
+  .trusted-brands {
+    padding-bottom: var(--size-16);
+  }
+
+  .pricing {
+    padding-bottom: var(--size-16);
   }
   
   .hire-us-content {
@@ -515,13 +537,13 @@ ul.footer-menu-list {
 
   .hire-us-left-container, .hire-us-right  {
     position: relative;
-    right: var(--size-50);
+    right: var(--size-20);
   }
 
   .hire-us-right {
     width: 65%;
     position: relative;
-    right: 25px;
+    right: var(--size-10);
 }
 
 
